@@ -1,0 +1,7 @@
+一、kubectl命令补全
+1、master安装命令补全，并临时生效
+yum install -y bash-completion
+source /usr/share/bash-completion/bash_completion
+2、永久生效
+source <(kubectl completion bash)
+echo "source <(kubectl completion bash)" >> ~/.bashrc
