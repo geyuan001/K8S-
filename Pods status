@@ -1,10 +1,10 @@
-Pending：API Server创建了Pod资源对象并已经存入了etcd中，但是它并未被调度完成，或者仍然处于从仓库下载镜像的过程中。
-Running：Pod已经被调度到某节点之上，并且所有容器都已经被kubelet创建完成。
-Succeeded：Pod 中的所有容器都被成功终止，并且不会再重启。
-Failed：Pod 中的所有容器都已终止了，并且至少有一个容器是因为失败终止。也就是说，容器以非0状态退出或者被系统终止。
-Unknown：因为某些原因无法取得 Pod 的状态，通常是因为与 Pod 所在主机通信失败。
-PodScheduled：Pod已被安排到一个节点;
-Ready：Pod可以提供请求，应该添加到所有匹配服务的负载平衡池中;
-Initialized：所有init容器 都已成功启动;
-Unschedulable：调度程序现在无法调度Pod，例如由于缺乏资源或其他限制;
-ContainersReady：Pod中的所有容器都已准备就绪。
+Pending：API Server创建了Pod资源对象并已经存入了etcd中，但是它并未被调度完成，或者仍然处于从仓库下载镜像的过程中.
+Running：Pod已经被调度到某节点之上，并且所有容器都已经被kubelet创建完成.
+Succeeded：Pod 中的所有容器都被成功终止，并且不会再重启.
+Failed：Pod 中的所有容器都已终止了，并且至少有一个容器是因为失败终止。也就是说，容器以非0状态退出或者被系统终止.
+Unknown：因为某些原因无法取得 Pod 的状态，通常是因为与 Pod 所在主机通信失败.
+PodScheduled：Pod已被安排到一个节点.
+Ready：Pod可以提供请求，应该添加到所有匹配服务的负载平衡池中.
+Initialized：所有init容器 都已成功启动.
+Unschedulable：调度程序现在无法调度Pod，例如由于缺乏资源或其他限制.
+ContainersReady：Pod中的所有容器都已准备就绪.
